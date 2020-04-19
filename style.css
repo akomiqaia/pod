@@ -1,11 +1,19 @@
 :root {
+  --main-color: hsl(194, 41%, 51%);
+  --main-color-med: hsla(194, 66%, 61%, 0.5);
+  --main-color-low: hsla(194, 66%, 61%, 0.1);
 }
+/* styling map */
+body{
+  font-family: 'Karla', sans-serif;,
 
-/* styling hamburger */
-
+}
+.contact-map {
+  width: 100%;
+  height: 400px;
+}
+/* hamburger */
 .hamburger {
-  position: relative;
-  padding-top: 1rem;
   display: inline-block;
   cursor: pointer;
   transition-property: opacity, filter;
@@ -17,34 +25,35 @@
   background-color: transparent;
   border: 0;
   margin: 0;
-  overflow: visible; 
-  z-index: 20;
+  overflow: visible;
 }
 .hamburger:hover {
-  opacity: 0.7; 
+  opacity: 0.7;
 }
 .hamburger.is-active:hover {
-  opacity: 0.7; 
+  opacity: 0.7;
 }
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
-  background-color: #000; 
+  background-color: #000;
 }
 
 .hamburger-box {
   width: 40px;
   height: 24px;
   display: inline-block;
-  position: relative; 
+  position: relative;
 }
 
 .hamburger-inner {
   display: block;
   top: 50%;
-  margin-top: -2px; 
+  margin-top: -2px;
 }
-.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
   width: 40px;
   height: 4px;
   background-color: #000;
@@ -52,121 +61,195 @@
   position: absolute;
   transition-property: transform;
   transition-duration: 0.15s;
-  transition-timing-function: ease; 
+  transition-timing-function: ease;
 }
-.hamburger-inner::before, .hamburger-inner::after {
+.hamburger-inner::before,
+.hamburger-inner::after {
   content: "";
-  display: block; 
+  display: block;
 }
 .hamburger-inner::before {
-  top: -10px; 
+  top: -10px;
 }
 .hamburger-inner::after {
-  bottom: -10px; 
+  bottom: -10px;
 }
-
 .hamburger--arrow-r.is-active .hamburger-inner::before {
-  transform: translate3d(8px, 0, 0) rotate(45deg) scale(0.7, 1); 
+  transform: translate3d(8px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
 
 .hamburger--arrow-r.is-active .hamburger-inner::after {
-  transform: translate3d(8px, 0, 0) rotate(-45deg) scale(0.7, 1); 
+  transform: translate3d(8px, 0, 0) rotate(-45deg) scale(0.7, 1);
 }
 
+/* end of hamburger */
 
-/* navlist styles */
-.navbar-brand{
-  z-index: 20;
+/* end fof map */
+.navbar {
+  background-color: white;
+}
+.navbar-is-active {
+  background-color: var(--main-color);
+  transition: ease-in-out 0.6s;
+}
+.navbar-nav {
+  align-items: center;
+  justify-items: center;
+}
+.nav-item {
+  display: inline-block;
+  margin-right: 2rem;
+  font-weight: 600;
+}
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+.nav-link:hover {
+  color: #000;
+  opacity: 0.7;
+}
+.comprar-button {
+  background-color: var(--main-color);
+  padding: 15px;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.comprar-button:hover {
+  color: white;
+  opacity: 0.9;
+}
+/* end fo navbar */
+
+/* main title */
+
+.jumbotron {
+  background-image: url("./pics/peter-wendt--r5KSMkyoSc-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 70vh;
+  color: white;
+}
+.display-4, .lead {
   font-weight: 600;
 }
 
-.burger-nav-links {
-  display: none;
-}
-.burger-nav-links {
-  display: block;
-}
-nav {
-  width: 100vw;
-  left: -100%;
-  height: 100vh;
-  top:0%;
-  margin: 0;
-  background: var(--info);
-  text-transform: uppercase;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  transition: left 0.55s ease;
-  overflow: hidden;
-  position: fixed;
-}
-.navToggle {
-  left:0;
-} 
-.burger-nav-links {
-  list-style: none;
-  padding: 0;
-}
 
-.burger-nav-links li {
-  padding-bottom: 30%;
-}
-
-.burger-nav-links li a {
-  text-decoration: none;
-  font-weight: 800;
-  color :white;
-}
-
-.burger-nav-links li {
-  letter-spacing: 2px;
-  font-size: 1.3rem;
-  text-align: center;
-}
-
-/* end of hamburger menu styling */
-
-main {
-  padding-top: 5rem;
-}
+/* end of main title */
 
 
-.main-card {
-  width: 100%;
-  height: 50vh;
-  border: none;
-  background-image: url("./pics/peter-wendt--r5KSMkyoSc-unsplash.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
 
 .section-picture {
-  padding: 2rem;
   width: 100%;
-  height: 50vh;
-  object-fit: cover;
-  object-position: center center;
 }
 
-.pedidos-envios-card {
-  border-radius: 0;
+.nuestro-productos {
+  background-color: var(--main-color-low);
   width: 100%;
-  height: 10vh;
 }
-.footer-card{
-  border-radius: 0;
-  width: 100%;
-  height: 40vh;
+.page-titles {
+font-size: 2rem;
+font-style: normal;
+font-weight: bold;
+line-height: 2.1rem;
+text-transform: uppercase;
+color:#4F4F4F;
+margin-bottom: 1rem;
+text-align: center;
 }
 
-/* styling map */
+.page-titles > p {
+font-style: normal;
+font-weight: normal;
+font-size: 1rem;
+line-height: 1.5rem;
+text-align: justify;
+text-transform: capitalize;
+color: #4F4F4F;
 
-#map {
-  width: 100%;
-  height: 400px;
-  background-color: grey;
+}
+
+
+.pedidos-paragraph{
+  margin: 0 2.4rem;
+  text-align: center;
+}
+.pedidos-envios-table {
+  margin: 2rem 0;
+  align-items: center;
+  justify-content: center;
+}
+.pedidos-envios-table > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  text-align: center;
+  height: 5rem;
+  margin-bottom: 0.3rem;
+  padding: 1rem;
+  width: 60%;
+  background-color: var(--main-color-med);
+}
+
+.pedidos-envios-table .odd {
+  background-color: var(--main-color-low);
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .navbar-nav {
+    height: 100vh;
+    justify-content: center;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .nav-item {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .nav-item .nav-link {
+    color: white;
+  }
+  .comprar-button {
+    color: white;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+
+  /* jumbotron */
+  .jumbotron {
+    height: 80vh;
+  }
+  .display-4 {
+    font-size: 2rem;
+  }
+  .lead{
+    font-size: 0.9rem;
+  }
+  .jumbotron > a {
+    padding: 7px;
+  }
+  /* end of jumbotron */
+  .page-titles {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+  }
+  .nuestro-productos > div > div {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .pedidos-envios-table > div {
+    font-size: 1rem;
+    line-height: 1rem;
+    width: 80%;
+  }
 }

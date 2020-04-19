@@ -1,13 +1,12 @@
 // hamburger menu
-const hamburger = document.getElementById("hamburger");
-const nav = document.querySelector('nav');
-const navLinks = document.getElementById("classList")
+const hamburger = document.getElementById("hamburger")
+const navbar = document.querySelector(".navbar")
 
 hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("is-active")
-  navLinks.classList.toggle("nav-links-is-active")
-  nav.classList.toggle('navToggle');
+  hamburger.classList.toggle("is-active");
+  navbar.classList.toggle("navbar-is-active")
 })
+
 
 // Initialize and add the map
 function initMap() {
