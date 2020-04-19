@@ -153,10 +153,33 @@ body{
   background-color: var(--main-color-low);
   width: 100%;
 }
+.page-titles {
+font-size: 2rem;
+font-style: normal;
+font-weight: bold;
+line-height: 2.1rem;
+text-transform: uppercase;
+color:#4F4F4F;
+margin-bottom: 1rem;
+text-align: center;
+}
+
+.page-titles > p {
+font-style: normal;
+font-weight: normal;
+font-size: 1rem;
+line-height: 1.5rem;
+text-align: justify;
+text-transform: capitalize;
+color: #4F4F4F;
+
+}
 
 
-
-
+.pedidos-paragraph{
+  margin: 0 2.4rem;
+  text-align: center;
+}
 
 @media screen and (max-width: 767px) {
   .navbar-nav {
@@ -192,9 +215,14 @@ body{
     padding: 7px;
   }
   /* end of jumbotron */
-
+  .page-titles {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+  }
   .nuestro-productos > div > div {
     display: flex;
     flex-direction: column-reverse;
   }
+
+
 }
