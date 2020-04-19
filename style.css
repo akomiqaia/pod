@@ -180,6 +180,30 @@ color: #4F4F4F;
   margin: 0 2.4rem;
   text-align: center;
 }
+.pedidos-envios-table {
+  margin: 2rem 0;
+  align-items: center;
+  justify-content: center;
+}
+.pedidos-envios-table > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  text-align: center;
+  height: 5rem;
+  margin-bottom: 0.3rem;
+  padding: 1rem;
+  width: 60%;
+  background-color: var(--main-color-med);
+}
+
+.pedidos-envios-table .odd {
+  background-color: var(--main-color-low);
+}
+
+
 
 @media screen and (max-width: 767px) {
   .navbar-nav {
@@ -223,6 +247,9 @@ color: #4F4F4F;
     display: flex;
     flex-direction: column-reverse;
   }
-
-
+  .pedidos-envios-table > div {
+    font-size: 1rem;
+    line-height: 1rem;
+    width: 80%;
+  }
 }
