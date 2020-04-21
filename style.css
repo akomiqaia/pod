@@ -306,14 +306,17 @@ color: #4F4F4F;
   padding: 1.5rem 1rem;
   margin-bottom: 0;
   justify-content: space-evenly;
+  list-style: none;
+  text-decoration: none;
 }
-
-.contact-icons li
-{
-  display:inline-block;
-  margin-bottom:4px
+.contact-icons a {
+  color: white;
 }
-
+.social-icons-container {
+  min-width: 20vw;
+  display: flex;
+  justify-content: space-evenly;
+}
 /* end of carousel section */
 
 @media screen and (max-width: 767px) {
@@ -402,6 +405,18 @@ color: #4F4F4F;
   margin-top: 10vh;
 }
 
+.contact-icons {
+  flex-direction: column;
+}
+.contact-icons li {
+  margin: 0.7rem 0.4rem;
+  text-align: center;
+}
+.social-icons-container {
+  min-width: 20vw;
+  display: flex;
+  justify-content: space-evenly;
+}
 
 /* end of footer stuff */
 
@@ -410,15 +425,3 @@ color: #4F4F4F;
 
 
 
-/* **************************************************************** */
-
-
-@media (max-width:767px)
-{
-  .social-icons li.title
-  {
-    display:block;
-    margin-right:0;
-    font-weight:600
-  }
-}
