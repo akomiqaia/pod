@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -152,14 +152,23 @@
           </p>
           <!-- table section -->
           <div class="d-flex flex-column pedidos-envios-table">
-            <div class="p-2"><p>Entre 0 y 30£</p><p>6£</p></div>
-            <div class="p-2 odd"><p>Entre 30$ y 60£</p><p>4£</p></div>
-            <div class="p-2"><p>Mas de 60£</p><p>Gratis</p></div>
+            <div class="p-2">
+              <p>Entre 0 y 30£</p>
+              <p>6£</p>
+            </div>
+            <div class="p-2 odd">
+              <p>Entre 30$ y 60£</p>
+              <p>4£</p>
+            </div>
+            <div class="p-2">
+              <p>Mas de 60£</p>
+              <p>Gratis</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="carousel">
+      <section id="carousel" class="carousel-container">
         <div
           id="carouselExampleIndicators"
           class="carousel slide"
@@ -178,21 +187,21 @@
             <div class="carousel-item active">
               <img
                 src="./pics/gregory-hayes-QFmNQXLPbZc-unsplash.jpg"
-                class="d-block w-100"
+                class="d-block carousel-image"
                 alt="..."
               />
             </div>
             <div class="carousel-item">
               <img
                 src="./pics/peter-wendt--r5KSMkyoSc-unsplash.jpg"
-                class="d-block w-100"
+                class="d-block carousel-image"
                 alt="..."
               />
             </div>
             <div class="carousel-item">
               <img
                 src="./pics/daisy-obryan-7JPGg8S-QD4-unsplash.jpg"
-                class="d-block w-100"
+                class="d-block carousel-image"
                 alt="..."
               />
             </div>
@@ -218,124 +227,241 @@
         </div>
       </section>
 
-      <section id="details">
-        <div class="farmer-icon">
-          <a class="" href="#">
-            <svg
-              width="30"
-              height="30"
-              class=""
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Vue.js icon</title>
-              <path
-                d="M24,1.61H14.06L12,5.16,9.94,1.61H0L12,22.39ZM12,14.08,5.16,2.23H9.59L12,6.41l2.41-4.18h4.43Z"
-              ></path>
-            </svg>
-            Granjero Grande
-          </a>
-        </div>
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <button
-              class="btn btn-outline-secondary dropdown-toggle"
-              type="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Espaniol
-            </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <div role="separator" class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
-            </div>
-          </div>
-        </div>
-        <div id="detailsLinks" class="detailsLinks">
-          <nav class="nav flex-column">
-            <h3>HOME</h3>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
-            <h3>POLITICAS</h3>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">link</a>
-            <h3>COMPANIA</h3>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
-          </nav>
-        </div>
-      </section>
-      <!-- Footer -->
-      <footer class="page-footer font-small bg-cyan darken-3">
-        <!-- Footer Elements -->
-        <div class="container">
-          <!-- Grid row-->
-          <div class="row">
-            <!-- Grid column -->
-            <div class="col-md-12 py-5">
-              <div class="mb-5 flex-center">
-                <!-- Facebook -->
-                <a class="fb-ic">
-                  <i
-                    class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"
-                  >
-                  </i>
-                </a>
-                <!-- Twitter -->
-                <a class="tw-ic">
-                  <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x">
-                  </i>
-                </a>
-                <!-- Google +-->
-                <a class="gplus-ic">
-                  <i
-                    class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"
-                  >
-                  </i>
-                </a>
-                <!--Linkedin -->
-                <a class="li-ic">
-                  <i
-                    class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"
-                  >
-                  </i>
-                </a>
-                <!--Instagram-->
-                <a class="ins-ic">
-                  <i
-                    class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"
-                  >
-                  </i>
-                </a>
-                <!--Pinterest-->
-                <a class="pin-ic">
-                  <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
-                </a>
+      <section id="footer">
+        <footer class="site-footer">
+          <hr />
+          <div class="container links-container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 language-farmer-icon">
+                <div class="farmer-icon">
+                  <a class="" href="#">
+                    <svg
+                      width="30"
+                      height="30"
+                      class=""
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>Vue.js icon</title>
+                      <path
+                        d="M24,1.61H14.06L12,5.16,9.94,1.61H0L12,22.39ZM12,14.08,5.16,2.23H9.59L12,6.41l2.41-4.18h4.43Z"
+                      ></path>
+                    </svg>
+                    Granjero Grande
+                  </a>
+                </div>
+                <div class="input-group">
+                  <div class="dropdown dropdown-language">
+                    <button
+                      class="btn btn-outline dropdown-toggle"
+                      type="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Espaniol
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">English</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-4 col-md-2 footer-web-links">
+                <h6>HOME</h6>
+                <ul class="footer-links">
+                  <li><a class="nav-link" href="#">Historia</a></li>
+                  <li><a class="nav-link" href="#">Nuestros productos</a></li>
+                  <li><a class="nav-link" href="#">Envios</a></li>
+                </ul>
+              </div>
+
+              <div class="col-xs-4 col-md-2">
+                <h6>POLITICAS</h6>
+                <ul class="footer-links">
+                  <li>
+                    <a class="nav-link" href="#">Politica de privacidad</a>
+                  </li>
+                  <li><a class="nav-link" href="#">Politica de cookies</a></li>
+                  <li>
+                    <a class="nav-link" href="#">Terminos y condiciones</a>
+                  </li>
+                  <li><a class="nav-link" href="#">Sitemap</a></li>
+                </ul>
+              </div>
+              <div class="col-xs-4 col-md-2">
+                <h6>COMPANIA</h6>
+                <ul class="footer-links">
+                  <li>
+                    <a class="nav-link" href="./contact.html">Contacto</a>
+                  </li>
+                  <li><a class="nav-link" href="#">RRSS</a></li>
+                </ul>
               </div>
             </div>
-            <!-- Grid column -->
           </div>
-          <!-- Grid row-->
-        </div>
-        <!-- Footer Elements -->
+          
+            <div class="row contact-icons-outer-container">
+              <div class="col-md-12 col-sm-12 col-xs-12 contact-icons-container ">
+                <ul class="contact-icons">
+                  <li>
+                    <a class="conact-icons" href="#"
+                      ><svg
+                        width="24"
+                        height="25"
+                        viewBox="0 0 24 25"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M23.3707 17.6506L20.0143 14.2943C18.8157 13.0956 16.7779 13.5752 16.2984 15.1334C15.9388 16.2123 14.7401 16.8116 13.6613 16.5718C11.2639 15.9725 8.02748 12.8559 7.42814 10.3387C7.06853 9.2598 7.78775 8.06111 8.86656 7.70155C10.4249 7.22208 10.9043 5.18431 9.70564 3.98563L6.34932 0.62931C5.39038 -0.20977 3.95195 -0.20977 3.11287 0.62931L0.835372 2.90681C-1.44213 5.30418 1.07511 11.6572 6.70893 17.291C12.3428 22.9249 18.6958 25.562 21.0932 23.1646L23.3707 20.8871C24.2098 19.9281 24.2098 18.4897 23.3707 17.6506Z"
+                          fill="white"
+                        />
+                      </svg>
+                      91 034 023
+                    </a>
+                  </li>
+                  <li>
+                    <a class="conact-icons" href="#"
+                      ><svg
+                        width="24"
+                        height="18"
+                        viewBox="0 0 24 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0.500988 1.46044C3.79489 4.25002 9.57468 9.15773 11.2734 10.688C11.5015 10.8945 11.7461 10.9995 12 10.9995C12.2534 10.9995 12.4976 10.8955 12.7251 10.6899C14.4253 9.1582 20.2051 4.25002 23.499 1.46044C23.7041 1.28709 23.7354 0.982406 23.5693 0.770484C23.1855 0.280781 22.6133 0 22 0H2C1.38674 0 0.814441 0.280781 0.430675 0.770531C0.264644 0.982406 0.295909 1.28709 0.500988 1.46044Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M23.71 2.97215C23.5327 2.88965 23.3242 2.91843 23.1768 3.04443C19.5239 6.14109 14.8618 10.1104 13.395 11.4321C12.5717 12.1753 11.4292 12.1753 10.604 11.4311C9.0405 10.0224 3.80512 5.57175 0.823219 3.04439C0.674766 2.91839 0.465797 2.89059 0.290016 2.9721C0.113297 3.05418 0 3.23095 0 3.42576V16C0 17.103 0.896953 18 2.00002 18H22C23.103 18 24 17.103 24 16V3.42576C24 3.23095 23.8867 3.05371 23.71 2.97215Z"
+                          fill="white"
+                        />
+                      </svg>
 
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">
-          © 2020 Copyright:
-          <a href="#"> POD </a>
-        </div>
-        <!-- Copyright -->
-      </footer>
-      <!-- Footer -->
+                      mail@mail.com
+                    </a>
+                  </li>
+                  <li>
+                    <a class="conact-icons" href="#"
+                      ><svg
+                        width="17"
+                        height="24"
+                        viewBox="0 0 17 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.34229 0C3.74238 0 0 3.74238 0 8.34229C0 14.1239 8.35049 24 8.35049 24C8.35049 24 16.6846 13.8396 16.6846 8.34229C16.6846 3.74238 12.9423 0 8.34229 0ZM10.8593 10.7849C10.1653 11.4788 9.25386 11.8258 8.34229 11.8258C7.43086 11.8258 6.51914 11.4788 5.82539 10.7849C4.43745 9.39712 4.43745 7.13892 5.82539 5.75098C6.49746 5.07861 7.39146 4.7083 8.34229 4.7083C9.29312 4.7083 10.187 5.07876 10.8593 5.75098C12.2473 7.13892 12.2473 9.39712 10.8593 10.7849Z"
+                          fill="white"
+                        />
+                      </svg>
+                      C/Petunias 7, La Cabrera. 28493. Madrid</a
+                    >
+                  </li>
+                  <div class="social-icons-container">
+                  <li>
+                    <a class="social-icons" href="#"
+                      ><svg
+                        width="37"
+                        height="39"
+                        viewBox="0 0 37 39"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M31.5801 0.73877H5.41992C2.43163 0.73877 0 3.18909 0 6.20036V32.5616C0 35.5729 2.43163 38.0232 5.41992 38.0232H31.5801C34.5684 38.0232 37 35.5729 37 32.5616V6.20036C37 3.18909 34.5684 0.73877 31.5801 0.73877ZM18.5723 29.139C13.1927 29.139 8.81641 24.7291 8.81641 19.3082C8.81641 13.8873 13.1927 9.47731 18.5723 9.47731C23.9518 9.47731 28.3281 13.8873 28.3281 19.3082C28.3281 24.7291 23.9518 29.139 18.5723 29.139ZM29.4121 11.6619C27.619 11.6619 26.1602 10.1919 26.1602 8.38499C26.1602 6.57811 27.619 5.10804 29.4121 5.10804C31.2052 5.10804 32.6641 6.57811 32.6641 8.38499C32.6641 10.1919 31.2052 11.6619 29.4121 11.6619Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M29.4121 7.29272C28.8139 7.29272 28.3281 7.78228 28.3281 8.38504C28.3281 8.98781 28.8139 9.47736 29.4121 9.47736C30.0103 9.47736 30.4961 8.98781 30.4961 8.38504C30.4961 7.78228 30.0103 7.29272 29.4121 7.29272Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M18.5723 11.6619C14.3888 11.6619 10.9844 15.0924 10.9844 19.3081C10.9844 23.5237 14.3888 26.9543 18.5723 26.9543C22.7558 26.9543 26.1602 23.5237 26.1602 19.3081C26.1602 15.0924 22.7558 11.6619 18.5723 11.6619Z"
+                            fill="white"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0">
+                            <rect
+                              y="0.73877"
+                              width="37"
+                              height="37.2844"
+                              fill="white"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="social-icons" href="#"
+                      ><svg
+                        width="37"
+                        height="39"
+                        viewBox="0 0 37 39"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M32.375 0.731201H4.625C2.07431 0.731201 0 2.82145 0 5.39172V33.3549C0 35.9251 2.07431 38.0154 4.625 38.0154H18.5V25.1989H13.875V19.3733H18.5V14.7128C18.5 10.8515 21.6057 7.72198 25.4375 7.72198H30.0625V13.5476H27.75C26.4735 13.5476 25.4375 13.4265 25.4375 14.7128V19.3733H31.2188L28.9062 25.1989H25.4375V38.0154H32.375C34.9257 38.0154 37 35.9251 37 33.3549V5.39172C37 2.82145 34.9257 0.731201 32.375 0.731201Z"
+                            fill="white"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0">
+                            <rect
+                              y="0.731201"
+                              width="37"
+                              height="37.2842"
+                              fill="white"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="social-icons" href="#"
+                      ><svg
+                        width="37"
+                        height="39"
+                        viewBox="0 0 37 39"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M34.3315 0.73877H2.66846C1.19464 0.73877 0 1.94259 0 3.42775V35.3342C0 36.8194 1.19464 38.0232 2.66846 38.0232H34.3315C35.8054 38.0232 37 36.8194 37 35.3342V3.42775C37 1.94259 35.8054 0.73877 34.3315 0.73877V0.73877ZM26.9469 15.274C26.9551 15.4575 26.959 15.6418 26.959 15.827C26.959 21.4811 22.688 28.0012 14.8774 28.0015H14.8777H14.8774C12.4794 28.0015 10.2479 27.2932 8.3687 26.0794C8.70095 26.1189 9.03913 26.1386 9.38155 26.1386C11.3711 26.1386 13.202 25.4547 14.6555 24.3069C12.7967 24.2722 11.2294 23.0351 10.6885 21.3349C10.9474 21.385 11.2136 21.4123 11.4866 21.4123C11.8741 21.4123 12.2496 21.3597 12.6064 21.2615C10.6634 20.8695 9.19975 19.1392 9.19975 17.0672C9.19975 17.0479 9.19975 17.0305 9.20032 17.0126C9.77251 17.3332 10.4269 17.526 11.1235 17.5477C9.98338 16.781 9.23391 15.4705 9.23391 13.986C9.23391 13.202 9.44421 12.4675 9.80893 11.8352C11.9029 14.4243 15.0324 16.1271 18.5615 16.306C18.4887 15.9925 18.4512 15.666 18.4512 15.3303C18.4512 12.9682 20.3529 11.0518 22.6979 11.0518C23.9194 11.0518 25.0225 11.5721 25.7974 12.4038C26.7648 12.2115 27.6732 11.8554 28.4938 11.3653C28.1763 12.364 27.5033 13.202 26.6265 13.7319C27.4855 13.6284 28.3041 13.3988 29.0649 13.0581C28.4967 13.9163 27.776 14.6701 26.9469 15.274Z"
+                            fill="white"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0">
+                            <rect
+                              y="0.73877"
+                              width="37"
+                              height="37.2844"
+                              fill="white"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </a>
+                  </li>
+                </div>
+                </ul>
+              </div>
+            </div>
+        
+        </footer>
+      </section>
     </main>
 
     <script

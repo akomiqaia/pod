@@ -2,6 +2,8 @@
   --main-color: hsl(194, 41%, 51%);
   --main-color-med: hsla(194, 66%, 61%, 0.5);
   --main-color-low: hsla(194, 66%, 61%, 0.1);
+  --text-color: hsl(231, 14%, 73%);
+  --footer-color: hsl(227, 13%, 28%);
 }
 /* styling map */
 body{
@@ -203,7 +205,119 @@ color: #4F4F4F;
   background-color: var(--main-color-low);
 }
 
+/* carousel section */
 
+.carousel-container {
+  margin: 0 auto;
+  width:  70vw;
+}
+.carousel-image {
+  object-fit: cover;
+  width: 70vw;
+  height: 70vh;
+}
+
+.carousel{
+  width: 70vw;
+  height: 70vh;
+}
+
+
+
+.site-footer
+{
+  margin-top: 15vh;
+  font-size: 1rem;
+  line-height:1.4rem;
+  color: #B1B4C4;
+}
+.site-footer hr { 
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+.farmer-icon > a {
+  color: var(--main-color);
+  font-weight: 800;
+}
+.language-farmer-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-evenly;
+  justify-content: space-evenly;
+  min-width: 50%;
+  
+}
+
+.dropdown-language {
+  margin: 0 auto;
+}
+.dropdown-language > button {
+  color: var(--main-color);
+  border-radius: 5px;
+  font-weight: 600;
+  padding: 0.6rem 3.5rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25)
+}
+.dropdown-item {
+  display: flex;
+  color: var(--main-color);
+  width: 100%;
+  font-weight: 600; 
+}
+
+.site-footer h6
+{ 
+  columns: var(--text-color);
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a:hover
+{
+  color: var(--footer-color);
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-inline-start: 0;
+  list-style:none
+}
+.footer-links a
+{
+  padding: 0.5rem 0;
+  color: var(--text-color)
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color: var(--main-color);
+  text-decoration:none;
+}
+.links-container {
+  margin-bottom: 10vh;
+}
+.contact-icons-outer-container{
+  margin: 0;
+  background-color: var(--footer-color);
+}
+.contact-icons {
+  display: flex;
+  padding: 1.5rem 1rem;
+  margin-bottom: 0;
+  justify-content: space-evenly;
+  list-style: none;
+  text-decoration: none;
+}
+.contact-icons a {
+  color: white;
+}
+.social-icons-container {
+  min-width: 20vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+/* end of carousel section */
 
 @media screen and (max-width: 767px) {
   .navbar-nav {
@@ -252,4 +366,62 @@ color: #4F4F4F;
     line-height: 1rem;
     width: 80%;
   }
+/* carousel section */
+
+.carousel-container {
+  margin: 0 auto;
+  width:  100vw;
 }
+.carousel-image {
+  object-fit: cover;
+  width: 100vw;
+  height: 50vh;
+}
+
+.carousel{
+  width: 100vw;
+  height: 50vh;
+}
+
+
+/* end of carousel section */
+/* footer stuff */
+.site-footer {
+  margin-top: 5vh;
+}
+.site-footer hr
+{ 
+  display: none;
+}
+
+.language-farmer-icon {
+  height: 50vh;
+}
+.site-footer h6 {
+  margin-top: 1.5rem;
+}
+
+.footer-contact-icons {
+  margin-top: 10vh;
+}
+
+.contact-icons {
+  flex-direction: column;
+}
+.contact-icons li {
+  margin: 0.7rem 0.4rem;
+  text-align: center;
+}
+.social-icons-container {
+  min-width: 20vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* end of footer stuff */
+
+
+}
+
+
+
