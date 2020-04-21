@@ -226,7 +226,7 @@ color: #4F4F4F;
 
 .site-footer
 {
-  margin-top: 20vh;
+  margin-top: 15vh;
   font-size: 1rem;
   line-height:1.4rem;
   color: #B1B4C4;
@@ -265,6 +265,39 @@ color: #4F4F4F;
   font-weight: 600; 
 }
 
+.site-footer h6
+{ 
+  columns: var(--text-color);
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a:hover
+{
+  color: var(--footer-color);
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-inline-start: 0;
+  list-style:none
+}
+.footer-links a
+{
+  padding: 0.5rem 0;
+  color: var(--text-color)
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color: var(--main-color);
+  text-decoration:none;
+}
+
+.footer-contact-icons {
+  margin-top: 10vh;
+}
 /* end of carousel section */
 
 @media screen and (max-width: 767px) {
@@ -341,47 +374,27 @@ color: #4F4F4F;
 { 
   display: none;
 }
+
 .language-farmer-icon {
   height: 50vh;
 }
+.site-footer h6 {
+  margin-top: 1.5rem;
+}
+.footer-contact-icons {
+  margin-top: 10vh;
+}
+
+
+/* end of footer stuff */
+
+
 }
 
 
 
 /* **************************************************************** */
 
-.site-footer h6
-{
-  columns: #B1B4C4;;
-  font-size:1rem;
-  text-transform: uppercase;
-  margin-top:5px;
-  letter-spacing:2px
-}
-
-.site-footer a:hover
-{
-  color: var(--footer-color);
-  text-decoration:none;
-}
-.footer-links
-{
-  padding-left:0;
-  list-style:none
-}
-.footer-links li
-{
-  display:block
-}
-.footer-links a
-{
-  color:#737373
-}
-.footer-links a:active,.footer-links a:focus,.footer-links a:hover
-{
-  color:#3366cc;
-  text-decoration:none;
-}
 .footer-contact-icons{
   background-color: var(--footer-color);
 }
