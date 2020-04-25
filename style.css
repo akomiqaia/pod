@@ -7,8 +7,8 @@
 }
 /* styling map */
 body{
-  font-family: 'Karla', sans-serif;,
-
+  font-family: 'Karla', sans-serif;
+  scroll-behavior: smooth;
 }
 .contact-map {
   width: 100%;
@@ -276,7 +276,6 @@ color: #4F4F4F;
 }
 .site-footer a:hover
 {
-  color: var(--footer-color);
   text-decoration:none;
 }
 .footer-links
@@ -412,6 +411,8 @@ color: #4F4F4F;
   margin: 0.7rem 0.4rem;
   text-align: center;
 }
+
+
 .social-icons-container {
   min-width: 20vw;
   display: flex;
