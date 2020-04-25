@@ -4,15 +4,14 @@
   --main-color-low: hsla(194, 66%, 61%, 0.1);
   --text-color: hsl(231, 14%, 73%);
   --footer-color: hsl(227, 13%, 28%);
-}
-/* styling map */
-body{
-  font-family: 'Karla', sans-serif;
   scroll-behavior: smooth;
 }
+body{
+  font-family: 'Karla', sans-serif;
+}
 .contact-map {
-  width: 100%;
-  height: 400px;
+  display: flex;
+  justify-content: center;
 }
 /* hamburger */
 .hamburger {
@@ -178,10 +177,11 @@ color: #4F4F4F;
 }
 
 
-.pedidos-paragraph{
+.center-paragraph {
   margin: 0 2.4rem;
   text-align: center;
 }
+
 .pedidos-envios-table {
   margin: 2rem 0;
   align-items: center;
@@ -278,6 +278,8 @@ color: #4F4F4F;
 {
   text-decoration:none;
 }
+
+
 .footer-links
 {
   padding-inline-start: 0;
@@ -316,6 +318,34 @@ color: #4F4F4F;
   display: flex;
   justify-content: space-evenly;
 }
+
+
+/* form styles */
+
+/* .contact-form > h2 {
+  color: var(--);
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  text-align: center;
+  font-weight: 800;
+} */
+
+.contact-form > button {
+  font-weight: 800;
+  display: block;
+  margin: 0 auto;
+  padding: 0.8rem 3rem;
+}
+
+.form-group label {
+  color: #303133;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+
+/* end of form styles */
+
 /* end of carousel section */
 
 @media screen and (max-width: 767px) {
@@ -356,10 +386,13 @@ color: #4F4F4F;
     font-size: 1.5rem;
     line-height: 1.7rem;
   }
-  .nuestro-productos > div > div {
+  .nuestro-productos > div > div, .contacto-map {
     display: flex;
     flex-direction: column-reverse;
   }
+
+
+
   .pedidos-envios-table > div {
     font-size: 1rem;
     line-height: 1rem;
@@ -396,6 +429,9 @@ color: #4F4F4F;
 .language-farmer-icon {
   height: 50vh;
 }
+.footer-web-links{
+  margin-left: 2.5rem;
+}
 .site-footer h6 {
   margin-top: 1.5rem;
 }
@@ -420,6 +456,8 @@ color: #4F4F4F;
 }
 
 /* end of footer stuff */
+
+
 
 
 }
